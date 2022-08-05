@@ -1,0 +1,9 @@
+title: University of Arizona Quarto Presentation
+author: Eric R. Scott
+version: 0.0.1
+contributes:
+  formats:
+    revealjs:
+      theme: [default, theme.scss]
+      logo: logo.png
+      
