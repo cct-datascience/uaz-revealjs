@@ -1,12 +1,13 @@
 /*-- scss:defaults --*/
-//this is all just placeholder stuff that needs to change
-$body-bg: #191919;
-$body-color: #fff;
-$link-color: #42affa;
+
+// fonts
+$font-family-sans-serif: "Proxima Nova", Calibri, sans-serif !default;
+
+// colors from https://brand.arizona.edu/applying-the-brand/colors
+$body-bg: #1E5288 !default; //"azurite"
+$body-color: white !default;
+$link-color: #EF4056 !default; //"bloom"
+$code-block-bg: #F4EDE5 !default; //"warm gray"
 
 /*-- scss:rules --*/
 
-.reveal .slide blockquote {
-  border-left: 3px solid $text-muted;
-  padding-left: 0.5em;
-}

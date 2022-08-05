@@ -8,6 +8,10 @@ editor: visual
 
 ## Quarto
 
+```{r}
+library(tidyverse)
+```
+
 Quarto enables you to weave together content and executable code into a finished presentation.
 To learn more about Quarto presentations see <https://quarto.org/docs/presentations/>.
 
@@ -24,5 +28,9 @@ When you click the **Render** button a presentation will be generated that inclu
 You can embed code like this:
 
 ```{r}
+#| echo: true
 1 + 1
+p <- ggplot(mpg, aes(class, hwy))
+p + geom_boxplot()
+
 ```
