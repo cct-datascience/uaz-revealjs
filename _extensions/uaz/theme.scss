@@ -6,8 +6,12 @@ $font-family-sans-serif: "Proxima Nova", Calibri, sans-serif !default;
 // colors from https://brand.arizona.edu/applying-the-brand/colors
 $body-bg: #1E5288 !default; //"azurite"
 $body-color: white !default;
-$link-color: #EF4056 !default; //"bloom"
-$code-block-bg: #F4EDE5 !default; //"warm gray"
+$link-color: #EF4056 !default; //"bloom" also controls tabset links, highlight color, and hover over code line numbers color
+$code-block-bg: #001C48 !default; //"midnight"
+$tabset-border-color: white !default;
+
+// headings
+$presentation-heading-color: white !default;
 
 /*-- scss:rules --*/
 

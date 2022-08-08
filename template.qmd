@@ -22,15 +22,85 @@ When you click the **Render** button a document will be generated that includes:
 -   Content authored with markdown
 -   Output from executable code
 
+## Blockquotes
+
+> Women belong in all places where decisions are being made.
+> It shouldn't be that women are the exception.
+
+\- Ruth Bader Ginsburg
+
 ## Code
 
 When you click the **Render** button a presentation will be generated that includes both content and the output of embedded code.
+
 You can embed code like this:
 
 ```{r}
 #| echo: true
 1 + 1
-p <- ggplot(mpg, aes(class, hwy))
-p + geom_boxplot()
-
+p <- ggplot(mpg, aes(class, hwy)) + geom_line()
+m <- lm(hwy ~ class, data = mpg)
 ```
+
+Here's a formatted but unevaluated code block
+
+``` python
+
+print("Hello!")
+```
+
+## Code with output
+
+output is by default below code
+
+```{r}
+#| echo: true
+print("Hello")
+```
+
+But can also be on the side
+
+```{r}
+#| echo: true
+#| output-location: column
+ggplot(mpg, aes(cty, hwy)) +
+  geom_point(aes(color = cyl)) +
+  scale_color_viridis_c() +
+  theme_bw()
+```
+
+## Tabset slide
+
+::: panel-tabset
+## Tab1
+
+There is some text in this tab.
+
+## Tab2
+
+```{r}
+plot(iris)
+```
+:::
+
+## Equations
+
+Here are some equations:
+
+$$
+y = \alpha_i + \beta_1x_1
+$$
+
+This is an inline equation $e = MC^2$
+
+## Multiple columns
+
+::: columns
+::: {.column width="40%"}
+Left column
+:::
+
+::: {.column width="60%"}
+Right column
+:::
+:::
