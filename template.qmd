@@ -63,20 +63,43 @@ But can also be on the side
 ```{r}
 #| echo: true
 #| output-location: column
+print("Hello")
+```
+
+## "Fenced" Code
+
+If you're teaching about Quarto or RMarkdown, it's helpful to show the whole code chunk, including options.
+That's pretty easy with the `echo: fenced` chunk option:
+
+```{r}
+#| echo: fenced
+#| eval: false
+
 ggplot(mpg, aes(cty, hwy)) +
   geom_point(aes(color = cyl)) +
   scale_color_viridis_c() +
   theme_bw()
 ```
 
+## Code Output
+
+```{r}
+#| echo: true
+library(dplyr)
+
+starwars %>% 
+  mutate(name, bmi = mass / ((height/100)^2)) %>% 
+  select(name:mass, bmi)
+```
+
 ## Tabset slide
 
 ::: panel-tabset
-## Tab1
+## Text
 
 There is some text in this tab.
 
-## Tab2
+## Plot
 
 ```{r}
 plot(iris)
@@ -96,11 +119,17 @@ This is an inline equation $e = MC^2$
 ## Multiple columns
 
 ::: columns
-::: {.column width="40%"}
-Left column
+::: {.column width="60%"}
+Left column with text
+
+-   text here
+
+-   more text
 :::
 
-::: {.column width="60%"}
-Right column
+::: {.column width="40%"}
+Right column with image
+
+![](https://brand.arizona.edu/sites/default/files/styles/uaqs_medium/public/block_a_anatomy_0.png?itok=8Ovdnsgm)
 :::
 :::
