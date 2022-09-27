@@ -25,6 +25,10 @@ $presentation-heading-color: white !default;
   margin-bottom: 10px !important;
 }
 
+.reveal img.slide-logo {
+  z-index: 1;
+}
+
 //make blockquotes fancier
 blockquote{
   display:block !important;
