@@ -1,8 +1,13 @@
 ---
-title: "Presentation"
+title: "The title of my talk:"
+subtitle: "Also has a subtitle"
+title-slide-attributes:
+  data-background-image: "_extensions/uaz/title-slide.png"
+  data-background-size: contain #makes image full screen
 author: "Your Name"
 date: today
-format: uaz-revealjs
+format: 
+  uaz-revealjs: default
 editor: visual
 ---
 
@@ -25,8 +30,8 @@ When you click the **Render** button a document will be generated that includes:
 ## Blockquotes
 
 > Women belong in all places where decisions are being made.
-> It shouldn't be that women are the exception.  
->  
+> It shouldn't be that women are the exception.
+>
 > \- *Ruth Bader Ginsburg*
 
 ## Code
