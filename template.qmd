@@ -25,9 +25,9 @@ When you click the **Render** button a document will be generated that includes:
 ## Blockquotes
 
 > Women belong in all places where decisions are being made.
-> It shouldn't be that women are the exception.
-
-\- Ruth Bader Ginsburg
+> It shouldn't be that women are the exception.  
+>  
+> \- *Ruth Bader Ginsburg*
 
 ## Code
 
