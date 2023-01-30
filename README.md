@@ -11,7 +11,7 @@ The goal of quarto-revealjs-uaz is to make a template for Quarto revealjs slides
 To use this theme, first install it from GitHub using the following shell command:
 
 ``` bash
-quarto install extension cct-datascience/quarto-revealjs-uaz
+quarto add cct-datascience/quarto-revealjs-uaz
 ```
 
 This will create a `_extensions` folder in your working directory with the necessary resources in it. Then, use `uaz-revealjs` as the format.
