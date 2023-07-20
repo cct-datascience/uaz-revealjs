@@ -1,9 +1,6 @@
 ---
 title: "The title of my talk:"
 subtitle: "Also has a subtitle"
-title-slide-attributes:
-  data-background-image: "_extensions/uaz/title-slide.png"
-  data-background-size: contain #makes image full screen
 author: "Your Name"
 date: today
 format: 
