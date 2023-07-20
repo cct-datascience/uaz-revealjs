@@ -6,15 +6,15 @@ $font-family-monospace: Menlo, SFMono-Regular, Monaco, Consolas, Liberation Mono
 
 // colors from https://brand.arizona.edu/applying-the-brand/colors
 $body-bg: #1E5288 !default; //"azurite"
-$body-color: white !default;
+$body-color: #E2E9EB !default; //"cool grey"
 $link-color: #EF4056 !default; //"bloom"--also controls tabset links, highlight color, and hover over code line numbers color
 $code-block-bg: #001C48 !default; //"midnight"--background of code boxes
 $code-bg: #001C48 !default; //"midnight"--background of inline code
-$code-color: white !default; //color of inline code
-$tabset-border-color: white !default;
+$code-color: #E2E9EB !default; //color of inline code
+$tabset-border-color: #E2E9EB !default;
 
 // headings
-$presentation-heading-color: white !default;
+$presentation-heading-color: #E2E9EB !default;
 
 /*-- scss:rules --*/
 
@@ -46,8 +46,8 @@ $presentation-heading-color: white !default;
 //make blockquotes fancier
 blockquote{
   display:block !important;
-  background: white !important;
-  color: #666 !important; //text color slightly grey
+  background: #E2E9EB !important;
+  color: #555 !important; //text color slightly grey
   padding: 15px 20px 15px 45px !important;
   margin: 0 0 20px !important;
   position: relative !important;
