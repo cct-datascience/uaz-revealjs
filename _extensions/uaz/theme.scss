@@ -33,8 +33,14 @@ $presentation-heading-color: white !default;
   margin-bottom: 10px !important;
 }
 
+// move logo above slide background image
 .reveal img.slide-logo {
   z-index: 1;
+}
+
+// make logo slightly bigger
+.reveal .slide-logo {
+  max-height: 3.5rem !important;
 }
 
 //make blockquotes fancier
