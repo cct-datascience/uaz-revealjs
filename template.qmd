@@ -135,3 +135,25 @@ Right column with image
 ![](https://brand.arizona.edu/sites/default/files/styles/uaqs_medium/public/block_a_anatomy_0.png?itok=8Ovdnsgm)
 :::
 :::
+
+## Callouts {.smaller}
+
+::: callout-note
+This is a note
+:::
+
+::: callout-tip
+This is a tip
+:::
+
+::: callout-important
+This is important
+:::
+
+::: callout-caution
+Caution!
+:::
+
+::: callout-warning
+Warning!
+:::
