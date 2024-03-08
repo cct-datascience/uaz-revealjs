@@ -29,7 +29,6 @@ If you'd also like to install the template .qmd file, you can instead use:
 
 ``` bash
 quarto use template cct-datascience/uaz-revealjs
-
 ```
 
 ## Notes on how to make your own theme:
