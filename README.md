@@ -1,5 +1,5 @@
 
-# quarto-revealjs-uaz
+# University of Arizona Themed Revealjs Extension for Quarto
 
 <!-- badges: start -->
 [![Project Status: Active – The project has reached a stable, usable state and is being actively developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)
@@ -12,7 +12,7 @@
 To use this theme, first install it from GitHub using the following shell command:
 
 ``` bash
-quarto add cct-datascience/quarto-revealjs-uaz
+quarto add cct-datascience/uaz-revealjs
 ```
 
 This will create a `_extensions` folder in your working directory with the necessary resources in it. Then, use `uaz-revealjs` as the format.
@@ -28,8 +28,7 @@ format: uaz-revealjs
 If you'd also like to install the template .qmd file, you can instead use:
 
 ``` bash
-quarto use template cct-datascience/quarto-revealjs-uaz
-
+quarto use template cct-datascience/uaz-revealjs
 ```
 
 ## Notes on how to make your own theme:

@@ -16,6 +16,9 @@ $tabset-border-color: #E2E9EB !default;
 // headings
 $presentation-heading-color: #E2E9EB !default;
 
+// logo
+$logo-height: 3.5rem !default;
+
 /*-- scss:rules --*/
 
 //set code output background same as code background
@@ -40,7 +43,7 @@ $presentation-heading-color: #E2E9EB !default;
 
 // make logo slightly bigger
 .reveal .slide-logo {
-  max-height: 3.5rem !important;
+  max-height: $logo-height !important;
 }
 
 //make blockquotes fancier
