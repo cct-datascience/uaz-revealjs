@@ -1,6 +1,6 @@
 title: University of Arizona Quarto Presentation
 author: Eric R. Scott
-version: 0.0.2
+version: 0.1.0
 quarto-required: ">=1.2"
 contributes:
   formats:
