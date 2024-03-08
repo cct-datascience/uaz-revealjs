@@ -6,7 +6,7 @@ contributes:
   formats:
     revealjs:
       theme: [default, theme.scss]
-      logo: logo.png
+      logo: uaz-logo.png
   highlight-style: 
     light: arrow-light
     dark: arrow-dark
