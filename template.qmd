@@ -2,29 +2,90 @@
 title: "The title of my talk:"
 subtitle: "Also has a subtitle"
 author: "Your Name"
-date: today
+date: last-modified
 format: 
-  uaz-revealjs: default
+  uaz-revealjs: 
+    theme:
+      - custom.scss
 editor: visual
 ---
 
-## Quarto
+## Welcome
 
-```{r}
-library(tidyverse)
-```
-
-Quarto enables you to weave together content and executable code into a finished presentation.
-To learn more about Quarto presentations see <https://quarto.org/docs/presentations/>.
-
-## Bullets
+This University of Arizona themed presentation was developed by the [CCT Data Science](https://datascience.cct.arizona.edu/) team at University of Arizona.
 
 When you click the **Render** button a document will be generated that includes:
 
 -   Content authored with markdown
 -   Output from executable code
 
+## Sample Slide
+
+Here's a bulleted list:
+
+-   First item
+
+    -   sub item
+
+-   Second item
+
+Here's a numbered list:
+
+1.  First item
+    1.  Sub item
+2.  Second item
+
+## Custom logo
+
+To override the logo in the lower right corner, you can add your own in the YAML header
+
+``` yaml
+---
+title: "The title of my talk:"
+subtitle: "Also has a subtitle"
+author: "Your Name"
+date: last-modified
+format: 
+  uaz-revealjs: 
+    logo: mylogo.png
+editor: visual
+---
+```
+
+Just make sure the image file (in this example "mylogo.png") is in the same folder as your presentation.
+
+## Logo size
+
+To adjust the size of the logo, create a `custom.scss` file with the following content
+
+``` scss
+/*-- scss:defaults --*/
+$logo-height: 3.5rem;
+```
+
+and adjust the number
+
+Include this style in your YAML header:
+
+``` yaml
+---
+title: "The title of my talk:"
+subtitle: "Also has a subtitle"
+author: "Your Name"
+date: last-modified
+format: 
+  uaz-revealjs: default
+editor: visual
+---
+```
+
+# Section Break
+
+Use the level 1 header for a section break slide
+
 ## Blockquotes
+
+The theme includes custom blockquotes
 
 > Women belong in all places where decisions are being made.
 > It shouldn't be that women are the exception.
@@ -39,6 +100,7 @@ You can embed code like this:
 
 ```{r}
 #| echo: true
+library(ggplot2)
 1 + 1
 p <- ggplot(mpg, aes(class, hwy)) + geom_line()
 m <- lm(hwy ~ class, data = mpg)
@@ -46,8 +108,7 @@ m <- lm(hwy ~ class, data = mpg)
 
 Here's a formatted but unevaluated code block
 
-``` python
-
+``` r
 print("Hello!")
 ```
 
@@ -76,7 +137,7 @@ That's pretty easy with the `echo: fenced` chunk option:
 ```{r}
 #| echo: fenced
 #| eval: false
-
+library(ggplot2)
 ggplot(mpg, aes(cty, hwy)) +
   geom_point(aes(color = cyl)) +
   scale_color_viridis_c() +
@@ -94,20 +155,6 @@ starwars %>%
   select(name:mass, bmi)
 ```
 
-## Tabset slide
-
-::: panel-tabset
-## Text
-
-There is some text in this tab.
-
-## Plot
-
-```{r}
-plot(iris)
-```
-:::
-
 ## Equations
 
 Here are some equations:
@@ -121,7 +168,7 @@ This is an inline equation $e = MC^2$
 ## Multiple columns
 
 ::: columns
-::: {.column width="60%"}
+::: {.column width="40%"}
 Left column with text
 
 -   text here
@@ -129,31 +176,7 @@ Left column with text
 -   more text
 :::
 
-::: {.column width="40%"}
-Right column with image
-
-![](https://brand.arizona.edu/sites/default/files/styles/uaqs_medium/public/block_a_anatomy_0.png?itok=8Ovdnsgm)
+::: {.column width="60%"}
+![Anatomy of the "A" logo](https://marcom.arizona.edu/sites/default/files/styles/az_natural/public/2023-11/Block%20A%20Anatomy%20Graphic.png?itok=Nxc_47cw){#fig-logo}
 :::
-:::
-
-## Callouts {.smaller}
-
-::: callout-note
-This is a note
-:::
-
-::: callout-tip
-This is a tip
-:::
-
-::: callout-important
-This is important
-:::
-
-::: callout-caution
-Caution!
-:::
-
-::: callout-warning
-Warning!
 :::
