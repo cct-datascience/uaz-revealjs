@@ -4,3 +4,6 @@
 .Ruserdata
 template.html
 template_files
+
+#so when template is installed it doesn't contain an .Rproj file!
+*.Rproj

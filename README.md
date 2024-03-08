@@ -9,7 +9,13 @@
 
 ## Installation
 
-To use this theme, first install it from GitHub using the following shell command:
+To use this theme and template
+
+``` bash
+quarto use template cct-datascience/uaz-revealjs
+```
+
+If you'd only like to install the theme and not use the template:
 
 ``` bash
 quarto add cct-datascience/uaz-revealjs
@@ -23,12 +29,6 @@ title: "Presentation"
 author: "Your Name"
 format: uaz-revealjs
 ---
-```
-
-If you'd also like to install the template .qmd file, you can instead use:
-
-``` bash
-quarto use template cct-datascience/uaz-revealjs
 ```
 
 ## Notes on how to make your own theme:
