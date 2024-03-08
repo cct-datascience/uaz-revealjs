@@ -4,9 +4,7 @@ subtitle: "Also has a subtitle"
 author: "Your Name"
 date: last-modified
 format: 
-  uaz-revealjs: 
-    theme:
-      - custom.scss
+  uaz-revealjs: default
 editor: visual
 ---
 
@@ -74,7 +72,9 @@ subtitle: "Also has a subtitle"
 author: "Your Name"
 date: last-modified
 format: 
-  uaz-revealjs: default
+  uaz-revealjs: 
+    theme:
+      - custom.scss
 editor: visual
 ---
 ```
