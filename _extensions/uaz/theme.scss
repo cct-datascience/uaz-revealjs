@@ -2,19 +2,48 @@
 
 // fonts
 $font-family-sans-serif: "Proxima Nova", Calibri, sans-serif !default;
-$font-family-monospace: Menlo, SFMono-Regular, Monaco, Consolas, Liberation Mono, Courier New, monospace;
+$font-family-monospace: Menlo, SFMono-Regular, Monaco, Consolas, Liberation Mono, Courier New, monospace !default;
 
 // colors from https://brand.arizona.edu/applying-the-brand/colors
-$body-bg: #1E5288 !default; //"azurite"
-$body-color: #E2E9EB !default; //"cool grey"
-$link-color: #EF4056 !default; //"bloom"--also controls tabset links, highlight color, and hover over code line numbers color
-$code-block-bg: #001C48 !default; //"midnight"--background of code boxes
-$code-bg: #001C48 !default; //"midnight"--background of inline code
-$code-color: #E2E9EB !default; //color of inline code
-$tabset-border-color: #E2E9EB !default;
+// primary
+$ua-red: #AB0520;
+$ua-blue: #0C234B;
+
+// neutral colors
+$ua-white: #FFFFFF;
+$ua-warmgray: #F4EDE5;
+$ua-coolgray: #E2E9EB;
+
+// complimentary colors
+$ua-midnight:#001C48;
+$ua-azurite: #1E5288;
+$ua-oasis: #378DBD;
+$ua-chili: #8B0015;
+
+// highlight & accent colors
+$ua-bloom: #EF4056;
+$ua-sky: #81D3EB;
+$ua-leaf: #70B865;
+$ua-river: #007D84;
+$ua-mesa: #A95C42;
+
+// set slide colors
+$body-bg: $ua-azurite !default; 
+$body-color: $ua-coolgray !default; 
+$link-color: $ua-bloom !default; //also controls tabset links, highlight color, and hover over code line numbers color
+$code-block-bg: $ua-midnight !default; //background of code boxes
+$code-bg: $ua-midnight !default; //background of inline code
+$code-color: $ua-coolgray !default; //color of inline code
+$tabset-border-color: $ua-coolgray !default;
 
 // headings
-$presentation-heading-color: #E2E9EB !default;
+$presentation-heading-color: $ua-coolgray !default;
+
+// blockquotes
+$blockquote-border-color: $ua-red !default;
+$blockquote-bg: $ua-coolgray !default;
+$blockquote-color: #555 !default; //text color slightly grey
+
 
 // logo
 $logo-height: 3.5rem !default;
@@ -53,16 +82,16 @@ $logo-height: 3.5rem !default;
 //make blockquotes fancier
 blockquote{
   display:block !important;
-  background: #E2E9EB !important;
-  color: #555 !important; //text color slightly grey
+  background: $blockquote-bg !important;
+  color: $blockquote-color !important; 
   padding: 15px 20px 15px 45px !important;
   margin: 0 0 20px !important;
   position: relative !important;
   
   
   /*Borders - (Optional)*/
-  border-left: 15px solid #AB0520 !important; //"arizona red"
-  border-right: 2px solid #AB0520 !important;
+  border-left: 15px solid $blockquote-border-color !important; 
+  border-right: 2px solid $blockquote-border-color !important;
   
   /*Box Shadow - (Optional)*/
   -moz-box-shadow: 2px 2px 15px darken($body-bg, 15%) !important;
@@ -76,7 +105,7 @@ blockquote::before{
   /*Font*/
   font-size: 75px;
   font-weight: bold;
-  color: #999;
+  color: lighten($blockquote-color, 35%); 
   
   /*Positioning*/
   position: absolute;
