@@ -33,6 +33,10 @@ $logo-height: 3.5rem !default;
 
 //add space between code and output
 .reveal div.sourceCode {
+  margin-bottom: 5px !important;
+}
+
+.reveal div.cell-output {
   margin-bottom: 10px !important;
 }
 
