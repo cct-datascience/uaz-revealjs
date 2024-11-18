@@ -180,3 +180,70 @@ Left column with text
 ![Anatomy of the "A" logo](https://marcom.arizona.edu/sites/default/files/styles/az_natural/public/2023-11/Block%20A%20Anatomy%20Graphic.png?itok=Nxc_47cw){#fig-logo}
 :::
 :::
+
+## Callout boxes {.smaller}
+
+::: callout-note
+A note
+:::
+
+::: callout-tip
+A tip
+:::
+
+::: callout-important
+Important!
+:::
+
+::: callout-caution
+Caution!
+:::
+
+::: callout-warning
+A warning
+:::
+
+## Flowcharts
+
+```{mermaid}
+%%| fig-align: center
+flowchart TD
+    c["Event"]-->ubuntu
+    c --> mac
+        subgraph ubuntu [runs-on: ubuntu-latest]
+        subgraph Job
+            direction TB
+            a1["Step 1: Checkout Repo"]--> a2["Step2: Install R"]
+            a2 --> a3["Step 3: Run Script"]
+            a3 --> a4["..."]
+        end
+        end
+        subgraph mac [runs-on: macos-latest]
+        subgraph Job2
+            direction TB
+            b1["Step 1: Checkout Repo"]--> b2["Step2: Install R"]
+            b2 --> b3["Step 3: Run Script"]
+            b3 --> b4["..."]
+        end
+        end
+```
+
+## GitGraph
+
+```{mermaid}
+gitGraph
+   commit
+   commit
+   branch person_1
+   commit
+   commit
+   commit
+   checkout main
+   branch person_2
+   commit
+   commit
+   checkout main
+   merge person_1
+   merge person_2
+   commit
+```
