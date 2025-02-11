@@ -121,3 +121,44 @@ blockquote::after{
   content: "";
 }
 
+//make callouts look better
+
+//tip
+.reveal div.callout.callout-tip{
+  border-left-color: $ua-leaf;
+}
+.reveal div.callout.callout-tip.callout-style-default .callout-title{
+  background-color: lighten($ua-leaf, 10);
+}
+
+//note
+.reveal div.callout.callout-note{
+  border-left-color: $ua-sky;
+}
+.reveal div.callout.callout-note.callout-style-default .callout-title{
+  background-color: lighten($ua-sky, 10);
+}
+
+//important
+.reveal div.callout.callout-important{
+  border-left-color: $ua-bloom;
+}
+.reveal div.callout.callout-important.callout-style-default .callout-title{
+  background-color: lighten($ua-bloom, 10);
+}
+
+//caution 
+.reveal div.callout.callout-caution{
+  border-left-color: darken(#fd7e14, 10);
+}
+.reveal div.callout.callout-caution.callout-style-default .callout-title{
+  background-color: lighten(#fd7e14, 20);
+}
+
+//warning
+.reveal div.callout.callout-warning{
+  border-left-color: darken(#ffc107, 5);
+}
+.reveal div.callout.callout-warning.callout-style-default .callout-title{
+  background-color: lighten(#ffc107, 20);
+}
